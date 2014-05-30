@@ -1,6 +1,8 @@
 'use strict';
 
 var commonGround = require('../lib/common-ground.js');
+var rimraf = require('rimraf');
+var fs = require('fs');
 
 /*
   ======== A Handy Little Nodeunit Reference ========
@@ -25,12 +27,22 @@ var commonGround = require('../lib/common-ground.js');
 exports.commonGround = {
   setUp: function(done) {
     // setup here
-    done();
+    commonGround.convert('test/fixtures/A.js', 'test/temp/A.js', function () {
+      done();
+    });
   },
-  'no args': function(test) {
-    test.expect(1);
-    // tests here
-    test.equal(commonGround.getFile(), null, 'If no argument is given to getFile is should return null.');
+  'convert': function(test) {
+    test.expect(2);
+    var A = require('./temp/A');
+    
+    var expected = {
+      X: 0,
+      Y: 1,
+      Z: 2
+    };
+    //test here
+    test.deepEqual(A.Direction, expected, 'We should be able to get data out of the object A.Direction');
+    test.equal(A.hello(), 'hello', 'The Function A.hello should give us output of hello');
     test.done();
   }
 };
