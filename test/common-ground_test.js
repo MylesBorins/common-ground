@@ -27,8 +27,11 @@ var fs = require('fs');
 exports.commonGround = {
   setUp: function(done) {
     // setup here
-    commonGround.convert('test/fixtures/A.js', 'test/temp/A.js', function () {
-      done();
+    rimraf('test/temp', function() {
+      fs.mkdirSync('test/temp/');
+      commonGround.convert('test/fixtures/A.js', 'test/temp/A.js', function () {
+        done();
+      });
     });
   },
   'convert': function(test) {
