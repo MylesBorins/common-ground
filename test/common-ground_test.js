@@ -30,7 +30,7 @@ exports.commonGround = {
   'no args': function(test) {
     test.expect(1);
     // tests here
-    test.equal(commonGround.awesome(), 'awesome', 'should be awesome.');
+    test.equal(commonGround.getFile(), null, 'If no argument is given to getFile is should return null.');
     test.done();
   }
 };
