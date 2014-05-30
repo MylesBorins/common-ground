@@ -1,0 +1,36 @@
+{
+  "name": "common-ground",
+  "version": "0.0.1",
+  "main": "lib/common-ground.js",
+  "description": "Common-ground can convert files using a Simplified CommonJS Wrapper to vanilla CommonJS lickity Split using Esprima and Escodegen",
+  "homepage": "https://github.com/TheAlphaNerd/common-ground",
+  "bugs": "https://github.com/TheAlphaNerd/common-ground/issues",
+  "author": {
+    "name": "Myles Borins",
+    "email": "myles.borins@gmail.com",
+    "url": "http://thealphanerd.io"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TheAlphaNerd/common-ground"
+  },
+  "license": "MPL 2.0",
+  "files": [
+    "lib"
+  ],
+  "keywords": [],
+  "devDependencies": {
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-nodeunit": "^0.3.3",
+    "grunt-contrib-watch": "^0.6.1",
+    "load-grunt-tasks": "^0.4.0",
+    "time-grunt": "^0.3.1",
+    "jshint-stylish": "^0.2.0"
+  },
+  "scripts": {
+    "test": "grunt"
+  },
+  "dependencies": {
+    "esprima": "^1.2.2"
+  }
+}
