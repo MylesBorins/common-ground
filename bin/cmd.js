@@ -43,7 +43,7 @@ if (!src) {
 src = makePath(src);
 dest = makePath(dest);
 
-commonGround(src, dest, function (err) {
+commonGround.write(src, dest, function (err) {
   if (err) {
     console.error(new Error(err));
     process.exit(1);
