@@ -10,18 +10,18 @@
 /*global define*/
 
 define(function (require, exports, module) {
-  'use strict';
-  var A = {};
+    'use strict';
+    var A = {};
 
-  A.Direction = {
-    X: 0,
-    Y: 1,
-    Z: 2
-  };
+    A.Direction = {
+        X: 0,
+        Y: 1,
+        Z: 2
+    };
 
-  A.hello = function hello() {
-    return 'hello';
-  };
+    A.hello = function hello() {
+        return 'hello';
+    };
 
-  module.exports = A;
+    module.exports = A;
 });

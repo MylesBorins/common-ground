@@ -10,14 +10,14 @@ var test = require('tape');
 
 var tempdir = path.join(os.tmpdir(), 'common-ground-' + Date.now());
 
-test('common-ground: write setup', function (t) {
+test('write: setup', function (t) {
   t.plan(1);
   mkdirp(tempdir, function (err) {
     t.error(err, 'folder should be created without an error');
   });
 });
 
-test('common-ground: write', function (t) {
+test('write: writes', function (t) {
   var inFile = path.join(__dirname, 'fixtures', 'A.js');
   var outFile = path.join(tempdir, 'A.js');
   var expected = {
@@ -36,7 +36,7 @@ test('common-ground: write', function (t) {
   });
 });
 
-test('common-ground: write teardown', function (t) {
+test('write: teardown', function (t) {
   t.plan(1);
   rimraf(tempdir, function (err) {
     t.error(err, 'folder should be removed without an error');
