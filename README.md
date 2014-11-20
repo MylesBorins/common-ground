@@ -20,8 +20,20 @@ define(function(require, exports, module) {
 ## Documentation
 ```
 var commonGround = require('common-ground');
-commonGround(pathToInput, pathToOutput, callback(err));
+commonGround.write(pathToInput, pathToOutput, callback(err)); // Convert file from input path and write to output path
+commonGround.convert(string); // return a string with anonymous define removed
 ```
+
+##CLI
+If this module is installed with the ```-g``` flag it will install a simple cli
+```
+Usage: common-ground [path to entry] [path to output(optional)]
+
+Standard Options:
+
+	-h Show this message
+```
+
 ## Contributing
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
 
