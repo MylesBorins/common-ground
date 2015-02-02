@@ -31,7 +31,6 @@ test('bin: no args', function (t) {
   t.plan(3);
 
   var binPath = path.join(__dirname, '..', 'bin', 'cmd.js');
-  console.log(binPath);
   var ps = spawn(binPath);
   var stdout = '';
   var stderr = '';
