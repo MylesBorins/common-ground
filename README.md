@@ -22,6 +22,7 @@ define(function(require, exports, module) {
 var commonGround = require('common-ground');
 commonGround.write(pathToInput, pathToOutput, callback(err)); // Convert file from input path and write to output path
 commonGround.convert(string); // return a string with anonymous define removed
+commonGround.convertDir(pathToInput, pathToOutput, callback(err)); // Convert an entire directory recursively
 ```
 
 ##CLI
