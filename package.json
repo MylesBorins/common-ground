@@ -1,6 +1,6 @@
 {
   "name": "common-ground",
-  "version": "0.3.3",
+  "version": "1.0.0",
   "main": "lib/common-ground.js",
   "description": "Common-ground can convert files using a Simplified CommonJS Wrapper to vanilla CommonJS lickity Split using Esprima and Escodegen",
   "homepage": "https://github.com/TheAlphaNerd/common-ground",
