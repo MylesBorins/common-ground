@@ -24,6 +24,12 @@ test('convert:', function (t) {
   t.equal(common, expected, 'it should have stripped require wrapper');
 });
 
+test('convert: passthrough', function (t) {
+  t.plan(1);
+  var common = convert(expected);
+  t.equal(common, expected, 'it should have stripped require wrapper');
+});
+
 test('convert: prepended', function (t) {
   t.plan(1);
   var common = convert(example, license);
