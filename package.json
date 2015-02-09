@@ -43,7 +43,7 @@
     "esprima": "^1.2.2",
     "findit": "^2.0.0",
     "minimist": "^1.1.0",
-    "ncp": "^1.0.1",
+    "ncp": "git://github.com/thealphanerd/ncp#de-modern",
     "through2": "^0.6.3"
   }
 }
